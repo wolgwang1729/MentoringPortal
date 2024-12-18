@@ -1,0 +1,11 @@
+.custom-toast-success{
+    background-color: rgb(196, 241, 196);
+    color:  white;
+    font-weight: bold;
+}
+
+.custom-toast-error{
+    background-color: rgb(247, 162, 162);
+    color:  white;
+    font-weight: bold;
+}
