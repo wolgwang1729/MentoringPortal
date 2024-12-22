@@ -29,6 +29,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div>
+          <img src="https://media.licdn.com/dms/image/C4E12AQHu2hF1a54y3Q/article-cover_image-shrink_720_1280/0/1612194451965?e=2147483647&v=beta&t=uriUZAfXiF2QUSv3Cnr4WIPogx2UYRdXFiFYDKx4J_Q" alt="" />
+        </div>
+        <div>
+          <img src="https://blogs.studentlife.utoronto.ca/lifeatuoft/files/2019/04/Screen-Shot-2019-04-24-at-11.52.38-AM-1024x576.png" alt="" />
+        </div>
+        <div>
+          <img src="https://www.mentorink.com/wp-content/uploads/2022/09/ImagesForArticles-16-scaled.webp" alt="" />
+        </div>
       </div>
     </>
   );
