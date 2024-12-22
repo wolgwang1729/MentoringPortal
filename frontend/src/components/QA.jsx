@@ -34,7 +34,7 @@ export default function QA() {
         <h1 className="font-serif md:text-3xl font-bold mb-4">
           Questions & Answers
         </h1>
-        <p className="font-serif md:text-xl text-center max-w-5xl">
+        <p className="font-serif md:text-xl text-center max-w-5xl px-1">
           Mentees can ask questions and mentors will comment and answer their
           queries. Engage with the community and get the guidance you need.
         </p>
@@ -46,7 +46,7 @@ export default function QA() {
                 No questions yet
               </h1>
             ):(
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 w-full justify-center px-2 sm:px-20 md:px-30 lg:px-44">
 {                  questions.map((question)=>(
                     <Q key={question._id} id={question._id} title={question.title} query={question.query} owner={question.owner} answers={question.answers} strech/>
                   ))}
