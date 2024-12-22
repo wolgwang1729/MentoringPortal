@@ -1,69 +1,65 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
-import {useDispatch, useSelector} from "react-redux"
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Footer() {
-  const status = useSelector(state => state.auth.status)
-  const userData = useSelector(state => state.auth.data)
+  const status = useSelector((state) => state.auth.status);
+  const userData = useSelector((state) => state.auth.data);
 
   return (
     <>
       <footer className="mt-8">
         <div className="mx-auto w-full p-4 py-6 bg-black text-white lg:py-8">
-          <div className="md:flex md:justify-between">
+          <div className=" flex  md:flex justify-center md:justify-between">
             <div className="flex flex-col justify-center">
               <Link to="#" className="flex items-left flex-col px-4">
-                <div className="flex items-center">
+                <div className="flex  justify-center items-center px-2">
                   <div>
-                    <img
-                      src={Logo}
-                      className="mr-3 h-8 lg:h-12"
-                      alt="Logo"
-                    />
+                    <img src={Logo} className="mr-3 h-8 lg:h-12" alt="Logo" />
                   </div>
-                  <div className="font-serif text-lg md:text-3xl">
+                  <div className="font-serif text-lg sm:text-3xl">
                     Mentoring
                   </div>
                   <div
-                    className="text-3xl md:text-5xl"
+                    className="text-3xl sm:text-5xl"
                     style={{ fontFamily: "'Corinthia', serif" }}
                   >
                     Portal
                   </div>
                 </div>
               </Link>
-              <div className="flex justify-left space-x-4 px-14 mt-4">
+              <div className="flex justify-center space-x-2 sm:space-x-4 px-14 sm:mt-2">
                 <a
-                  href="https://www.facebook.com/groups/www.dtudcefraternity.org/"
+                  href="#"
                   className="text-gray-300 hover:text-blue-600 transition-colors"
                   aria-label="Facebook Page"
                 >
                   <i className="fab fa-facebook-f fa-lg"></i>
                 </a>
                 <a
-                  href="https://www.linkedin.com/groups/2966751/"
+                  href="#"
                   className="text-gray-300 hover:text-blue-700 transition-colors"
                   aria-label="LinkedIn Page"
                 >
                   <i className="fab fa-linkedin-in fa-lg"></i>
                 </a>
                 <a
-                  href="https://twitter.com/DTUDCEForum"
+                  href="#"
                   className="text-gray-300 hover:text-blue-400 transition-colors"
                   aria-label="Twitter Page"
                 >
                   <i className="fab fa-x-twitter fa-lg"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/dtu.delhi/"
+                  href="#"
                   className="text-gray-300 hover:text-pink-500 transition-colors"
                   aria-label="Instagram Page"
                 >
                   <i className="fab fa-instagram fa-lg"></i>
                 </a>
                 <a
-                  href="https://www.youtube.com/@dtustudio"
+                  href="#"
                   className="text-gray-300 hover:text-red-600 transition-colors"
                   aria-label="YouTube Channel"
                 >
@@ -71,33 +67,37 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="hidden md:grid md:grid-cols-2 md:gap-8">
+            <div className="hidden sm:grid sm:grid-cols-2 sm:gap-8">
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-202 uppercase">
                   Resources
                 </h2>
                 <ul className="text-gray-400 font-medium">
-                                            <li>
-                                                <NavLink
-                                                    to='/'
-                                                    className={({ isActive }) =>
-                                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-400"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                                                    }
-                                                >
-                                                    Home
-                                                </NavLink>
-                                            </li>
-                                            <li>
-                                                <NavLink
-                                                    to='/resources'
-                                                    className={({ isActive }) =>
-                                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-400"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                                                    }
-                                                >
-                                                    Resources
-                                                </NavLink>
-                                            </li>
-                                            {/* <li>
+                  <li>
+                    <NavLink
+                      to="/"
+                      className={({ isActive }) =>
+                        `block py-2 pr-4 pl-3 duration-200 ${
+                          isActive ? "text-orange-700" : "text-gray-400"
+                        } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      }
+                    >
+                      Home
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/resources"
+                      className={({ isActive }) =>
+                        `block py-2 pr-4 pl-3 duration-200 ${
+                          isActive ? "text-orange-700" : "text-gray-400"
+                        } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      }
+                    >
+                      Resources
+                    </NavLink>
+                  </li>
+                  {/* <li>
                                                 <NavLink
                                                     to='/events'
                                                     className={({ isActive }) =>
@@ -107,47 +107,59 @@ export default function Footer() {
                                                     Events
                                                 </NavLink>
                                             </li> */}
-                                            <li>
-                                                <NavLink
-                                                    to='/q&a'
-                                                    className={({ isActive }) =>
-                                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-400"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                                                    }
-                                                >
-                                                    Q&A
-                                                </NavLink>
-                                            </li>
-                                            {status && userData.type === "student" &&<li>
-                                                <NavLink
-                                                    to='/my-queries'
-                                                    className={({ isActive }) =>
-                                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-400"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                                                    }
-                                                >
-                                                    My-Queries
-                                                </NavLink>
-                                            </li>}
-                                            <li>
-                                                <NavLink
-                                                    to='/mentor-connect'
-                                                    className={({ isActive }) =>
-                                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-400"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                                                    }
-                                                >
-                                                    Mentor Connect
-                                                </NavLink>
-                                            </li>
-                                            {status && <li>
-                                                <NavLink
-                                                    to='/profile'
-                                                    className={({ isActive }) =>
-                                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-400"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                                                    }
-                                                >
-                                                    Profile
-                                                </NavLink>
-                                            </li>}
-                                        </ul>
+                  <li>
+                    <NavLink
+                      to="/q&a"
+                      className={({ isActive }) =>
+                        `block py-2 pr-4 pl-3 duration-200 ${
+                          isActive ? "text-orange-700" : "text-gray-400"
+                        } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      }
+                    >
+                      Q&A
+                    </NavLink>
+                  </li>
+                  {status && userData.type === "student" && (
+                    <li>
+                      <NavLink
+                        to="/my-queries"
+                        className={({ isActive }) =>
+                          `block py-2 pr-4 pl-3 duration-200 ${
+                            isActive ? "text-orange-700" : "text-gray-400"
+                          } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                        }
+                      >
+                        My-Queries
+                      </NavLink>
+                    </li>
+                  )}
+                  <li>
+                    <NavLink
+                      to="/mentor-connect"
+                      className={({ isActive }) =>
+                        `block py-2 pr-4 pl-3 duration-200 ${
+                          isActive ? "text-orange-700" : "text-gray-400"
+                        } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      }
+                    >
+                      Mentor Connect
+                    </NavLink>
+                  </li>
+                  {status && (
+                    <li>
+                      <NavLink
+                        to="/profile"
+                        className={({ isActive }) =>
+                          `block py-2 pr-4 pl-3 duration-200 ${
+                            isActive ? "text-orange-700" : "text-gray-400"
+                          } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                        }
+                      >
+                        Profile
+                      </NavLink>
+                    </li>
+                  )}
+                </ul>
               </div>
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-200 uppercase">
@@ -225,7 +237,7 @@ export default function Footer() {
                 </svg>
                 <span className="sr-only">Twitter page</span>
               </Link>
-              <Link to="#" className="text-gray-500">
+              <Link to="https://github.com/wolgwang1729" className="text-gray-500">
                 <svg
                   className="w-4 h-4"
                   aria-hidden="true"
