@@ -189,7 +189,7 @@ export default function Header() {
           } sm:hidden`}
           id="mobile-menu-2"
         >
-          <ul className="bg-blue-50 rounded-lg text-xs flex flex-col mt-4 mb-2 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+          <ul className="bg-blue-50 rounded-lg text-lg flex flex-col mt-4 mb-2 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
             <li>
               <NavLink
                 to="/"
@@ -371,13 +371,13 @@ export default function Header() {
             <>
               <Link
                 to="/login"
-                className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-lg px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
               >
                 Log in
               </Link>
               <Link
                 to="/register"
-                className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-1 sm:py-2 lg:py-2.5 mr-2 focus:outline-none"
+                className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-lg px-4 lg:px-5 py-1 sm:py-2 lg:py-2.5 mr-2 focus:outline-none"
               >
                 Register
               </Link>
