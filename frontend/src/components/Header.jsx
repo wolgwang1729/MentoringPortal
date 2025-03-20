@@ -171,8 +171,8 @@ export default function Header() {
             </ul>
           </div>
           {/* 3 Dashes */}
-          <div>
-            <div className="sm:hidden flex items-center lg:order-2">
+          <div className="sm:hidden">
+            <div className="flex items-center lg:order-2">
               <button
                 className="text-gray-800 focus:ring-4 focus:ring-gray-300 hover:bg-gray-50 px-2 rounded-md focus:outline-none"
                 onClick={toggleMenu}
