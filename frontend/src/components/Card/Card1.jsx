@@ -19,12 +19,12 @@ export default function Card1() {
           class="card-cover"
           style={{
             backgroundImage:
-              "url('https://media.licdn.com/dms/image/v2/D5603AQEEHJsRlv2yTA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690559440566?e=1740009600&v=beta&t=cyF_vWmIeDZ-nsuZue29eweSPWOHaooHn0HxSBr-UzA')",
+              "url('https://media.licdn.com/dms/image/v2/D5603AQEEHJsRlv2yTA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690559440566?e=1747872000&v=beta&t=pDYp551m9cGHhEaKvTc2orXhQwOQ1ziYtCNLdF91OoA')",
           }}
         ></div>
         <img
           class="card-avatar"
-          src="https://media.licdn.com/dms/image/v2/D5603AQEEHJsRlv2yTA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690559440566?e=1740009600&v=beta&t=cyF_vWmIeDZ-nsuZue29eweSPWOHaooHn0HxSBr-UzA"
+          src="https://media.licdn.com/dms/image/v2/D5603AQEEHJsRlv2yTA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690559440566?e=1747872000&v=beta&t=pDYp551m9cGHhEaKvTc2orXhQwOQ1ziYtCNLdF91OoA"
           alt="avatar"
         />
         <h1 class="card-fullname mb-2">Mayank Yadav</h1>
