@@ -58,7 +58,7 @@ Here are some images related to the project:
 - **Inspiration**: Students can draw motivation from mentors who have successfully navigated similar academic and career paths.
 
 ## Technologies Used
-![Mentoring Portal Database Models](https://i.sstatic.net/MBFDXnRp.png)
+![Mentoring Portal Database Models ER Diagram](https://i.sstatic.net/MBFDXnRp.png)
 - **Frontend**: React, Tailwind CSS, Vite
 - **Backend**: Node.js, Express, MongoDB
 - **State Management**: Redux Toolkit
